@@ -1,0 +1,41 @@
+main{
+    height: 100vh;
+    background-image: url("../images/Giant-Panda-in-China-by-Brad-Josephs-1280x640.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:last baseline;
+    color: white;
+}
+
+.mainContext{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header>h1{
+    font-family:'Times New Roman', Times, serif
+}
+
+#button{
+    height: 40px;
+    width: 150px;
+    background-color:#44b17e;
+    border: none;
+    border-radius:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#buttonLink{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandatopia</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <nav>
+        <div id="navTop">
+            <div id="contact">
+                <div class="telephone">
+                    <img class="icon" src="../images/phone-icon.png" alt="phone-icon">
+                    <span> 1234-5678</span>
+                </div>
+                <div class="email">
+                    <img class="icon" src="../images/email-icon.png" alt="email-icon">
+                    <span>&nbsp;pandatopia@panda.com</span>
+                </div>
+            </div>
+        </div>
+        <div id="navBottom">
+            <div id="logoContainer">
+                <img id="logo" src="../images/logo.png" alt="logo">
+                <span id="logoText">PANDATOPIA</span>
+            </div>
+            <div id="navbarContainer">
+                <ul id="navbar">
+                    <li ><a href="../index.html">Home</a></li>
+                    <li><a href="./facts.html">Panda Facts</a></li>
+                    <!-- <li><a href="./news.html">Panda News</a></li> -->
+                    <!-- <li id="iconContainer"><img id="icon" src="./pngegg.png" alt="panda"></li> -->
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li id="current-page"><a id="current-page-link" href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+    <main>
+        <h1>
+            Leave A Message Or Subscribe
+        </h1>
+        <div class="forms">
+            <form class="message" onsubmit="submitMessage(event);">
+                <p class="formTitle">Leave us a message</p>
+                <div></div>
+                <label for="messageFullName">Full Name<span class="required">*</span>: </label>
+                <input type="text" id="messageFullName" name="messageFullName" class="inputBox" required>
+                <label for="messageEmail">Email<span class="required">*</span>: </label>
+                <input type="text" id="messageEmail" name="messageEmail" class="inputBox" required>
+                <label for="messagePhoneNumber">Phone Number: </label>
+                <input type="text" id="messagePhoneNumber" name="messagePhoneNumber" class="inputBox"> 
+                <label for="messageComment">Comment: </label>
+                <textarea name="messageComment" id="messageComment" cols="30" rows="10"
+                    placeholder="Please leave your comment"></textarea>
+                <div></div>
+                <input type="submit" class="button" id="submitButton">
+            </form>
+            <form class="subscribe" onsubmit="subcribe(event);">
+                <p class="formTitle">Subscribe to our newsletter</p>
+                <div></div>
+                <label for="subscribeFullName">Full Name<span class="required">*</span></label>
+                <input type="text" id="subscribeFullName" name="subscribeFullName" class="inputBox" required>
+                <label for="subscribeEmail">Email<span class="required">*</span>: </label>
+                <input type="text" id="subscribeEmail" name="subscribeEmail" class="inputBox" required>
+                <input type="submit" class="button" id="subscribeButton" value="subcribe">
+            </form>
+        </div>
+        
+    </main>
+    <footer>
+        <p>Siyu Liu &copy; 2023 - All Rights Reserved</p>
+    </footer>
+</body>
+<script>
+    const submit=document.getElementById('submitButton');
+    const subscribe=document.getElementById('subscribeButton');
+
+    function submitMessage(event){
+        event.preventDefault();
+        const fullName=document.getElementById('messageFullName').value;
+        window.alert(`Thanks ${fullName}, We'll be in touch shortly!`)
+    }
+
+    function subcribe(event){
+        event.preventDefault();
+        const fullName = document.getElementById('subscribeFullName').value;
+        window.alert(`Thanks ${fullName}, We'll be in touch shortly!`)
+    }
+</script>
+
+</html>

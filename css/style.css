@@ -1,0 +1,131 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    /* background-color: #ebe2c5; */
+    height: 100vh;
+    color: #436857;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#navTop{
+    height: 40px;
+    background-color: #8bab53;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact{
+    display: flex;
+}
+
+.icon{
+    height: 20px;
+}
+
+.telephone{
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+}
+
+#navBottom{
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#logoContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+
+#logo{
+    height: 50px;
+}
+
+#logoText{
+    font-size: 40px;
+    font-family:monospace
+}
+
+#navbarContainer{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    height: 50px;
+}
+
+#navbar>li {
+    padding: 20px 20px 20px 20px;
+    margin: 0px 20px 0px 20px;
+}
+
+
+#navbar>li>a {
+    text-decoration: none;
+    color: #436857;
+}
+
+#navbar>li>a:hover {
+    color: #8bab53;
+}
+
+#navbar>li>#current-page-link {
+    color: #8bab53;
+}
+
+header{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#iconContainer{
+    padding: 0px 40px 0px 40px;
+    margin: 0px;
+
+}
+
+#icon{
+    height: 100px;
+}
+
+main {
+    background-color: #ebe2c5;
+    /* min-height: 100vh; */
+}
+
+footer{
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    background-color: #ebe2c5;
+    padding: 0px 50px 0px 50px;
+}
+
+footer > p{
+    border-top: 1px solid #cecccc;
+}
